@@ -56,3 +56,19 @@ a:hover {
 .policy h3 {
   margin-top: 1.5rem;
 }
+
+.app-title {
+  display: flex;
+  align-items: baseline; /* aligns icon with text baseline */
+  gap: 0.4em;
+}
+
+.app-title h1 {
+  margin: 0;
+}
+
+.app-icon {
+  height: 1em;      /* same height as text */
+  width: 1em;       /* keeps it square */
+  object-fit: contain;
+}
