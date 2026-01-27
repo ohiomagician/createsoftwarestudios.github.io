@@ -59,8 +59,10 @@ a:hover {
 
 .app-title {
   display: flex;
-  align-items: baseline; /* aligns icon with text baseline */
-  gap: 0.4em;
+  align-items: center;        /* vertical alignment */
+  justify-content: center;    /* horizontal centering */
+  gap: 0.6em;
+  text-align: center;
 }
 
 .app-title h1 {
@@ -68,7 +70,7 @@ a:hover {
 }
 
 .app-icon {
-  height: 1em;      /* same height as text */
-  width: 1em;       /* keeps it square */
+  height: 3em;               /* 3x text height */
+  width: 3em;
   object-fit: contain;
 }
