@@ -217,6 +217,8 @@ footer a:hover {
 .bloom-page .by-text {
   font-size: 10px;
   color: #cbd5e1;
+  align-items: right;
+  margin-right: 20;
   white-space: nowrap;
 }
 
