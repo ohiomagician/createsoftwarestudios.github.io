@@ -159,25 +159,28 @@ body {
 
 /* ---------- BLOOM PAGE HEADER (unchanged) ---------- */
 
+/* ---------- BLOOM PAGE HEADER ---------- */
+
 .bloom-page .bloom-title {
-  position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: center;
+  margin-bottom: 10px;
 }
 
 .bloom-page .title-center {
+  grid-column: 2;
   display: flex;
   align-items: center;
   gap: 12px;
+  justify-content: center;
 }
 
 .bloom-page .title-right {
-  position: absolute;
-  margin-right: 10px;
+  grid-column: 3;
+  justify-self: center;
   display: flex;
   align-items: center;
-  gap: 8px;
 }
 
 .bloom-page .app-icon {
@@ -186,15 +189,6 @@ body {
 
 .bloom-page .by-text {
   font-size: 10px;
-  align-text: right;
-  margin-right: 10px;
   color: #cbd5e1;
+  white-space: nowrap;
 }
-
-.bloom-page .tagline {
-  font-size: 1.1rem;
-  color: #cbd5e1;
-  text-align: center;
-  margin-top: 0.5rem;
-}
-
