@@ -1,62 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Creative Software Studios</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Creative Software Studios builds thoughtful mobile apps focused on productivity, clarity, and everyday usefulness." />
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creative Software Studios</title>
+
+<style>
+
+/* ---------- GLOBAL ---------- */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: radial-gradient(circle at top, #050b1f, #020617);
+  color: white;
+  text-align: center;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* ---------- LOGO ---------- */
+
+.site-header {
+  position: relative;
+  padding: 60px 20px 20px;
+}
+
+.logo {
+  width: 260px;
+  max-width: 80%;
+  position: relative;
+  z-index: 2;
+}
+
+.logo-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(59,130,246,0.35), transparent 70%);
+  filter: blur(40px);
+  animation: glowPulse 4s ease-in-out infinite;
+  z-index: 1;
+}
+
+@keyframes glowPulse {
+  0% { opacity: 0.4; transform: translate(-50%, -50%) scale(0.9); }
+  50% { opacity: 0.8; transform: translate(-50%, -50%) scale(1.1); }
+  100% { opacity: 0.4; transform: translate(-50%, -50%) scale(0.9); }
+}
+
+/* ---------- APP GRID ---------- */
+
+.app-grid {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.app-grid::-webkit-scrollbar {
+  height: 6px;
+}
+
+.app-grid::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.15);
+  border-radius: 10px;
+}
+
+/* ---------- CARDS ---------- */
+
+.card {
+  min-width: 420px;
+  flex: 1;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(59,130,246,0.15);
+}
+
+/* ---------- BUTTON ---------- */
+
+.button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.button:hover {
+  box-shadow: 0 10px 30px rgba(37,99,235,0.4);
+}
+
+/* ---------- TEXT ---------- */
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  color: #cbd5e1;
+  font-size: 16px;
+}
+
+</style>
+
 </head>
+
 <body>
 
-  <header>
-    <h1>Creative Software Studios</h1>
-    <p class="tagline">
-      Thoughtful mobile apps focused on clarity, productivity, and everyday usefulness.
-    </p>
-  </header>
+<header class="site-header">
+  <div class="logo-glow"></div>
+  <img src="assets/logo.png" alt="Creative Software Studios" class="logo">
+</header>
 
-  <main>
-    <section>
-      <h2>Our Apps</h2>
+<div class="container">
+
+  <h1>Creative Software Studios</h1>
+  <p>Innovative mobile apps powered by AI</p>
+
+  <div class="app-grid">
+
+    <div class="card">
+      <h2>Bloom Health Pro</h2>
       <p>
-        <strong>
-          <a href="bloom-health-pro.html">Bloom Health Pro</a>
-        </strong><br />
-        A smart plant care app that helps users identify plants, track health over time,
-        and care for plants with confidence.
+        AI plant identification and care assistant. Scan plants,
+        diagnose issues, and manage your garden effortlessly.
       </p>
-    </section>
+      <a class="button" href="#">Learn More</a>
+    </div>
 
-    <section>
-      <h2>About</h2>
+    <div class="card">
+      <h2>VIN Detective Pro</h2>
       <p>
-        Creative Software Studios designs practical, well-crafted applications across multiple
-        categories — from plant care to productivity and everyday tools.
+        Scan or enter any VIN to instantly identify vehicles.
+        Decode specs, track scans, and build your own auto database.
       </p>
-    </section>
+      <a class="button" href="#">Coming Soon</a>
+    </div>
 
-    <section>
-      <h2>Contact</h2>
-      <p>
-        Email:
-        <a href="mailto:info@creativesoftwarestudios.com">
-          info@creativesoftwarestudios.com
-        </a>
-      </p>
-    </section>
-  </main>
+  </div>
 
-  <footer>
-    <p>
-      © <span id="year"></span> Creative Software Studios ·
-      <a href="privacy.html">Privacy Policy</a>
-    </p>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+</div>
 
 </body>
 </html>
