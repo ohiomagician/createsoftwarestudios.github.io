@@ -1,174 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Creative Software Studios</title>
-<link rel="icon" type="image/png" href="/favicon.png">
-<style>
-
-/* ---------- GLOBAL ---------- */
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background: radial-gradient(circle at top, #050b1f, #020617);
-  color: white;
-  text-align: center;
-}
-
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 40px 20px;
-}
-
-/* ---------- LOGO ---------- */
-
-.site-header {
-  position: relative;
-  padding: 60px 20px 20px;
-}
-
-.logo {
-  width: 260px;
-  max-width: 80%;
-  position: relative;
-  z-index: 2;
-}
-
-.logo-glow {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 400px;
-  height: 400px;
-  transform: translate(-50%, -50%);
-  background: radial-gradient(circle, rgba(59,130,246,0.35), transparent 70%);
-  filter: blur(40px);
-  animation: glowPulse 4s ease-in-out infinite;
-  z-index: 1;
-}
-
-@keyframes glowPulse {
-  0% { opacity: 0.4; transform: translate(-50%, -50%) scale(0.9); }
-  50% { opacity: 0.8; transform: translate(-50%, -50%) scale(1.1); }
-  100% { opacity: 0.4; transform: translate(-50%, -50%) scale(0.9); }
-}
-
-/* ---------- APP GRID ---------- */
-
-.app-grid {
-  display: flex;
-  gap: 30px;
-  margin-top: 40px;
-  overflow-x: auto;
-}
-
-.card {
-  min-width: 420px;
-  flex: 1;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 20px;
-  padding: 30px;
-  backdrop-filter: blur(10px);
-  transition: 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(59,130,246,0.15);
-}
-
-.button {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 14px 24px;
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
-  border-radius: 12px;
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-}
-
-.section {
-  margin-top: 60px;
-}
-
-footer {
-  margin-top: 60px;
-  padding: 30px;
-  color: #94a3b8;
-  font-size: 14px;
-}
-
-</style>
+  <meta charset="UTF-8" />
+  <title>Creative Software Studios</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Creative Software Studios builds thoughtful mobile apps focused on productivity, clarity, and everyday usefulness." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
 
-<header class="site-header">
-  <div class="logo-glow"></div>
-  <img src="assets/logo.png" class="logo">
-</header>
+  <header>
+    <h1>Creative Software Studios</h1>
+    <p class="tagline">
+      Thoughtful mobile apps focused on clarity, productivity, and everyday usefulness.
+    </p>
+  </header>
 
-<div class="container">
+  <main>
+    <section>
+      <h2>Our Apps</h2>
+      <p>
+        <strong>
+          <a href="bloom-health-pro.html">Bloom Health Pro</a>
+        </strong><br />
+        A smart plant care app that helps users identify plants, track health over time,
+        and care for plants with confidence.
+      </p>
+    </section>
 
-<h1>Creative Software Studios</h1>
-<p>Innovative mobile applications powered by intelligent technology.</p>
+    <section>
+      <h2>About</h2>
+      <p>
+        Creative Software Studios designs practical, well-crafted applications across multiple
+        categories — from plant care to productivity and everyday tools.
+      </p>
+    </section>
 
-<div class="section">
-<h2>Our Apps</h2>
+    <section>
+      <h2>Contact</h2>
+      <p>
+        Email:
+        <a href="mailto:info@creativesoftwarestudios.com">
+          info@creativesoftwarestudios.com
+        </a>
+      </p>
+    </section>
+  </main>
 
-<div class="app-grid">
+  <footer>
+    <p>
+      © <span id="year"></span> Creative Software Studios ·
+      <a href="privacy.html">Privacy Policy</a>
+    </p>
+  </footer>
 
-<div class="card">
-<h2>Bloom Health Pro</h2>
-<p>
-AI plant identification and care assistant. Scan plants, diagnose
-issues, and manage your garden effortlessly.
-</p>
-<a class="button" href="#">Learn More</a>
-</div>
-
-<div class="card">
-<h2>VIN Detective Pro</h2>
-<p>
-Scan or enter any VIN to instantly identify vehicles. Decode specs,
-track scans, and build your own automotive database.
-</p>
-<a class="button" href="#">Coming Soon</a>
-</div>
-
-</div>
-</div>
-
-<div class="section">
-<h2>About Us</h2>
-<p>
-Creative Software Studios develops modern mobile applications designed
-to simplify everyday tasks using intelligent automation and clean,
-user-friendly design.
-</p>
-</div>
-
-<div class="section">
-<h2>Contact</h2>
-<p>
-For business inquiries or partnerships:<br>
-info@creativesoftwarestudios.com
-</p>
-</div>
-  
-<p class="privacy-link-wrapper">
-  <a href="privacy.html" class="privacy-link">Privacy Policy</a>
-</p>
-
-<footer>
-  <p>© 2026 Creative Software Studios. All rights reserved.</p>
-</footer>
-</div>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
