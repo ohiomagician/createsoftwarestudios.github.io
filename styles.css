@@ -84,6 +84,12 @@ a:hover {
   object-fit: contain;
 }
 
+.css-icon {
+height: 5em;
+  width: 5em;
+  object-fit: contain;
+}
+  
 /* ---------- PRIVACY LINK ---------- */
 
 .privacy-link-wrapper {
