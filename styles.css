@@ -295,3 +295,16 @@ body {
 .privacy-page .policy ul {
   padding-left: 20px;
 }
+
+/* ---------- PRIVACY PAGE LINKS ---------- */
+
+.privacy-page a,
+.privacy-page a:visited,
+.privacy-page a:active {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.privacy-page a:hover {
+  text-decoration: underline;
+}
