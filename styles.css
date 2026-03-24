@@ -86,14 +86,14 @@ a:hover {
   opacity: 0.9;
 }
 
-.privacy-link:hover {
-  opacity: 1;
-  text-decoration: underline;
-}
-
 .privacy-link,
 .privacy-link:visited,
 .privacy-link:active {
   color: #ffffff !important;
   text-decoration: none;
+}
+
+.privacy-link:hover {
+  color: #ffffff !important;
+  text-decoration: underline;
 }
