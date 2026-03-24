@@ -174,7 +174,7 @@ body {
 
 .bloom-page .title-right {
   position: absolute;
-  margin-right: 10;
+  margin-right: 10px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -186,6 +186,8 @@ body {
 
 .bloom-page .by-text {
   font-size: 10px;
+  align-text: right;
+  margin-right: 10px;
   color: #cbd5e1;
 }
 
