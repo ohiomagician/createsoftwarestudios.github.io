@@ -218,6 +218,7 @@ footer a:hover {
   font-size: 10px;
   color: #cbd5e1;
   align-items: right;
+  text-align: right;
   margin-right: 20;
   white-space: nowrap;
 }
