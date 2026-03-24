@@ -66,6 +66,19 @@
     <a href="index.html" class="privacy-link">Back to Home</a>
   </div>
 </footer>
+<div id="imageModal" class="image-modal" onclick="closeImage()">
+  <img class="image-modal-content" id="modalImage">
+</div>
 
+<script>
+function openImage(img) {
+  document.getElementById("imageModal").style.display = "flex";
+  document.getElementById("modalImage").src = img.src;
+}
+
+function closeImage() {
+  document.getElementById("imageModal").style.display = "none";
+}
+</script>
 </body>
 </html>
