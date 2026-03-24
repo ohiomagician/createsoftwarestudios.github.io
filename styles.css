@@ -157,8 +157,6 @@ body {
   font-size: 14px;
 }
 
-/* ---------- BLOOM PAGE HEADER (unchanged) ---------- */
-
 /* ---------- BLOOM PAGE HEADER ---------- */
 
 .bloom-page .bloom-title {
@@ -191,4 +189,23 @@ body {
   font-size: 10px;
   color: #cbd5e1;
   white-space: nowrap;
+}
+
+/* ---------- BLOOM PAGE TEXT ALIGNMENT ---------- */
+
+.bloom-page {
+  text-align: center;
+}
+
+.bloom-page p,
+.bloom-page h1,
+.bloom-page h2,
+.bloom-page ul,
+.bloom-page li {
+  text-align: center;
+}
+
+.bloom-page ul {
+  list-style-position: inside;
+  padding-left: 0;
 }
