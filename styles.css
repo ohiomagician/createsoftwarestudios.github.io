@@ -188,3 +188,11 @@ body {
   font-size: 10px;
   color: #cbd5e1;
 }
+
+.bloompage .tagline {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
