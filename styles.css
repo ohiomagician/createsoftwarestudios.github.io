@@ -17,7 +17,6 @@ body {
   text-align: center;
 }
 
-/* REMOVE old light header styling */
 header {
   background: transparent;
 }
@@ -39,6 +38,8 @@ h2 {
 .tagline {
   font-size: 1.1rem;
   color: #cbd5e1;
+  text-align: center;
+  margin-top: 0.5rem;
 }
 
 /* ---------- LAYOUT ---------- */
@@ -64,26 +65,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ---------- APP TITLE ---------- */
-
-.app-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.6em;
-  text-align: center;
-}
-
-.app-title h1 {
-  margin: 0;
-}
-
-.app-icon {
-  height: 3em;
-  width: 3em;
-  object-fit: contain;
-}
-
 /* ---------- PRIVACY LINK ---------- */
 
 .privacy-link-wrapper {
@@ -93,7 +74,7 @@ a:hover {
 .privacy-link,
 .privacy-link:visited,
 .privacy-link:active {
-  color: #ffffff !important;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
   opacity: 0.9;
@@ -118,68 +99,19 @@ footer {
 footer a,
 footer a:visited {
   color: #ffffff;
-  text-decoration: none;
 }
 
 footer a:hover {
   text-decoration: underline;
 }
 
-/* ---------- POLICY PAGE ---------- */
+/* ---------- PRIVACY PAGE ---------- */
 
 .policy h3 {
   margin-top: 1.5rem;
 }
 
-.tagline {
-  font-size: 1.1rem;
-  color: #cbd5e1;
-  text-align: center !important;
-  margin-top: 0.5rem;
-}
-
-.copyright {
-  font-size: 0.8rem;
-  margin-right:13 rem;
-  text-align: right !important;
-}
-.page-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-}
-
-.title-right {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.by-text {
-  margin-right:13 rem;
-  text-align: right !important;
-  font-size: 8px;
-  color: #cbd5e1;
-  white-space: nowrap;
-}
-
-.css-icon {
-  float: right;
-  margin-left: 15px;
-  height: 10em;
-  width: 10em;
-  object-fit: contain;
-}
-
-/* ----new----*/
-.title-left {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-/* ---------- Bloom Health Pro page only ---------- */
+/* ---------- BLOOM PAGE HEADER ---------- */
 
 .bloom-page .bloom-title {
   position: relative;
@@ -199,8 +131,7 @@ footer a:hover {
   position: absolute;
   right: 0;
   display: flex;
-  align-items: right;
-  margin-right: 20;
+  align-items: center;
   gap: 8px;
 }
 
@@ -209,20 +140,8 @@ footer a:hover {
   width: 80px;
 }
 
-.bloom-page .css-icon {
-  height: 80px;
-  width: auto;
-}
-
 .bloom-page .by-text {
   font-size: 10px;
   color: #cbd5e1;
-  align-items: right;
-  text-align: right;
-  margin-right: 20;
   white-space: nowrap;
-}
-
-.bloom-page .tagline {
-  text-align: center;
 }
