@@ -4,114 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Creative Software Studios</title>
+
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="stylesheet" href="styles.css">
-<style>
-
-/* ---------- GLOBAL ---------- */
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background: radial-gradient(circle at top, #050b1f, #020617);
-  color: white;
-  text-align: center;
-}
-
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 40px 20px;
-}
-
-/* ---------- LOGO ---------- */
-
-.site-header {
-  position: relative;
-  padding: 60px 20px 20px;
-}
-
-.logo {
-  width: 260px;
-  max-width: 80%;
-  position: relative;
-  z-index: 2;
-}
-
-.logo-glow {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 400px;
-  height: 400px;
-  transform: translate(-50%, -50%);
-  background: radial-gradient(circle, rgba(59,130,246,0.35), transparent 70%);
-  filter: blur(40px);
-  animation: glowPulse 4s ease-in-out infinite;
-  z-index: 1;
-}
-
-@keyframes glowPulse {
-  0% { opacity: 0.4; transform: translate(-50%, -50%) scale(0.9); }
-  50% { opacity: 0.8; transform: translate(-50%, -50%) scale(1.1); }
-  100% { opacity: 0.4; transform: translate(-50%, -50%) scale(0.9); }
-}
-
-/* ---------- APP GRID ---------- */
-
-.app-grid {
-  display: flex;
-  gap: 30px;
-  margin-top: 40px;
-  overflow-x: auto;
-}
-
-.card {
-  min-width: 420px;
-  flex: 1;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 20px;
-  padding: 30px;
-  backdrop-filter: blur(10px);
-  transition: 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(59,130,246,0.15);
-}
-
-.button {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 14px 24px;
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
-  border-radius: 12px;
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-}
-
-.section {
-  margin-top: 60px;
-}
-
-footer {
-  margin-top: 60px;
-  padding: 30px;
-  color: #94a3b8;
-  font-size: 14px;
-}
-
-</style>
 </head>
 
-<body>
+<body class="home-page">
 
 <header class="site-header">
   <div class="logo-glow"></div>
-  <img src="assets/logo.png" class="logo">
+  <img src="assets/logo.png" class="logo" alt="Creative Software Studios">
 </header>
 
 <div class="container">
@@ -126,18 +28,15 @@ footer {
 
 <div class="card">
   <div class="card-title">
-    <img
-      src="assets/adaptive-icon.png"
-      alt="Bloom Health Pro"
-      class="card-icon"
-    />
+    <img src="assets/adaptive-icon.png" class="card-icon" alt="Bloom Health Pro">
     <h2>Bloom Health Pro</h2>
   </div>
-<p>
-AI plant identification and care assistant. Scan plants, diagnose
-issues, and manage your garden effortlessly.
-</p>
-<a class="button" href="bloom-health-pro.html">Learn More</a>
+
+  <p>
+    AI plant identification and care assistant. Scan plants, diagnose
+    issues, and manage your garden effortlessly.
+  </p>
+  <a class="button" href="bloom-health-pro.html">Learn More</a>
 </div>
 
 <div class="card">
@@ -168,7 +67,7 @@ For business inquiries or partnerships:<br>
 info@creativesoftwarestudios.com
 </p>
 </div>
-  
+
 <p class="privacy-link-wrapper">
   <a href="privacy.html" class="privacy-link">Privacy Policy</a>
 </p>
@@ -176,6 +75,7 @@ info@creativesoftwarestudios.com
 <footer>
   <p>© 2026 Creative Software Studios. All rights reserved.</p>
 </footer>
+
 </div>
 
 </body>
