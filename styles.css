@@ -178,3 +178,47 @@ footer a:hover {
   align-items: center;
   gap: 12px;
 }
+
+/* ---------- Bloom Health Pro page only ---------- */
+
+.bloom-page .bloom-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.bloom-page .title-center {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bloom-page .title-right {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bloom-page .app-icon {
+  height: 40px;
+  width: 40px;
+}
+
+.bloom-page .css-icon {
+  height: 26px;
+  width: auto;
+}
+
+.bloom-page .by-text {
+  font-size: 14px;
+  color: #cbd5e1;
+  white-space: nowrap;
+}
+
+.bloom-page .tagline {
+  text-align: center;
+}
