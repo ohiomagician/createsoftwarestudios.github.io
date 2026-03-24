@@ -85,7 +85,9 @@ a:hover {
 }
 
 .css-icon {
-height: 10em;
+  float: right;
+  margin-left: 15px;
+  height: 10em;
   width: 10em;
   object-fit: contain;
 }
