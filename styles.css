@@ -8,6 +8,20 @@ body {
   line-height: 1.6;
 }
 
+/* ---------- PRIVACY LINK (GLOBAL) ---------- */
+
+.privacy-link,
+.privacy-link:visited,
+.privacy-link:active {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.privacy-link:hover {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
 /* ---------- HOME PAGE ONLY ---------- */
 
 .home-page {
