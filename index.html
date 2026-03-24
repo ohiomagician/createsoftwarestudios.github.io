@@ -63,19 +63,7 @@ body {
   gap: 30px;
   margin-top: 40px;
   overflow-x: auto;
-  padding-bottom: 10px;
 }
-
-.app-grid::-webkit-scrollbar {
-  height: 6px;
-}
-
-.app-grid::-webkit-scrollbar-thumb {
-  background: rgba(255,255,255,0.15);
-  border-radius: 10px;
-}
-
-/* ---------- CARDS ---------- */
 
 .card {
   min-width: 420px;
@@ -93,8 +81,6 @@ body {
   box-shadow: 0 20px 40px rgba(59,130,246,0.15);
 }
 
-/* ---------- BUTTON ---------- */
-
 .button {
   display: inline-block;
   margin-top: 15px;
@@ -106,63 +92,78 @@ body {
   font-weight: 600;
 }
 
-.button:hover {
-  box-shadow: 0 10px 30px rgba(37,99,235,0.4);
+.section {
+  margin-top: 60px;
 }
 
-/* ---------- TEXT ---------- */
-
-h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
-}
-
-h2 {
-  font-size: 24px;
-}
-
-p {
-  color: #cbd5e1;
-  font-size: 16px;
+footer {
+  margin-top: 60px;
+  padding: 30px;
+  color: #94a3b8;
+  font-size: 14px;
 }
 
 </style>
-
 </head>
 
 <body>
 
 <header class="site-header">
   <div class="logo-glow"></div>
-  <img src="assets/logo.png" alt="Creative Software Studios" class="logo">
+  <img src="assets/logo.png" class="logo">
 </header>
 
 <div class="container">
 
-  <h1>Creative Software Studios</h1>
-  <p>Innovative mobile apps powered by AI</p>
+<h1>Creative Software Studios</h1>
+<p>Innovative mobile applications powered by intelligent technology.</p>
 
-  <div class="app-grid">
+<div class="section">
+<h2>Our Apps</h2>
 
-    <div class="card">
-      <h2>Bloom Health Pro</h2>
-      <p>
-        AI plant identification and care assistant. Scan plants,
-        diagnose issues, and manage your garden effortlessly.
-      </p>
-      <a class="button" href="#">Learn More</a>
-    </div>
+<div class="app-grid">
 
-    <div class="card">
-      <h2>VIN Detective Pro</h2>
-      <p>
-        Scan or enter any VIN to instantly identify vehicles.
-        Decode specs, track scans, and build your own auto database.
-      </p>
-      <a class="button" href="#">Coming Soon</a>
-    </div>
+<div class="card">
+<h2>Bloom Health Pro</h2>
+<p>
+AI plant identification and care assistant. Scan plants, diagnose
+issues, and manage your garden effortlessly.
+</p>
+<a class="button" href="#">Learn More</a>
+</div>
 
-  </div>
+<div class="card">
+<h2>VIN Detective Pro</h2>
+<p>
+Scan or enter any VIN to instantly identify vehicles. Decode specs,
+track scans, and build your own automotive database.
+</p>
+<a class="button" href="#">Coming Soon</a>
+</div>
+
+</div>
+</div>
+
+<div class="section">
+<h2>About Us</h2>
+<p>
+Creative Software Studios develops modern mobile applications designed
+to simplify everyday tasks using intelligent automation and clean,
+user-friendly design.
+</p>
+</div>
+
+<div class="section">
+<h2>Contact</h2>
+<p>
+For business inquiries or partnerships:<br>
+info@creativesoftwarestudios.com
+</p>
+</div>
+
+<footer>
+© 2026 Creative Software Studios. All rights reserved.
+</footer>
 
 </div>
 
