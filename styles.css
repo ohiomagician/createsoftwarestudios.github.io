@@ -90,3 +90,10 @@ a:hover {
   opacity: 1;
   text-decoration: underline;
 }
+
+.privacy-link,
+.privacy-link:visited,
+.privacy-link:active {
+  color: #ffffff !important;
+  text-decoration: none;
+}
