@@ -84,14 +84,6 @@ a:hover {
   object-fit: contain;
 }
 
-.css-icon {
-  float: right;
-  margin-left: 15px;
-  height: 10em;
-  width: 10em;
-  object-fit: contain;
-}
-  
 /* ---------- PRIVACY LINK ---------- */
 
 .privacy-link-wrapper {
@@ -150,4 +142,30 @@ footer a:hover {
   font-size: 0.8rem;
   margin-right:13 rem;
   text-align: right !important;
+}
+.page-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.title-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.by-text {
+  font-size: 14px;
+  color: #cbd5e1;
+  white-space: nowrap;
+}
+
+.css-icon {
+  float: right;
+  margin-left: 15px;
+  height: 10em;
+  width: 10em;
+  object-fit: contain;
 }
