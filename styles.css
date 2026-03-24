@@ -199,6 +199,10 @@ body {
   height: 80px;
 }
 
+.bloom-page .screenshot {
+  height: 300px;
+}
+
 .bloom-page .by-text {
   font-size: 10px;
   color: #cbd5e1;
