@@ -145,5 +145,6 @@ footer a:hover {
 }
 
 .copyright {
+  margin-right:3 rem;
   text-align: right !important;
 }
