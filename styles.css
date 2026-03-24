@@ -140,6 +140,6 @@ footer a:hover {
 .tagline {
   font-size: 1.1rem;
   color: #cbd5e1;
-  text-align: center;
+  text-align: center !important;
   margin-top: 0.5rem;
 }
