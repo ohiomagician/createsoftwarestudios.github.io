@@ -254,4 +254,44 @@ body {
   border-radius: 12px;
 }
 
+/* ---------- PRIVACY PAGE ---------- */
 
+.privacy-page {
+  text-align: center;
+}
+
+.privacy-header {
+  margin-top: 40px;
+}
+
+.privacy-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.privacy-logo {
+  height: 40px;
+}
+
+.privacy-company {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.privacy-title {
+  margin-top: 10px;
+}
+
+/* centered block, left-aligned text */
+
+.privacy-page .policy {
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: left;
+}
+
+.privacy-page .policy ul {
+  padding-left: 20px;
+}
