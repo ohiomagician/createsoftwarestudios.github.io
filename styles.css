@@ -8,129 +8,162 @@ body {
   line-height: 1.6;
 }
 
-.card-title {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+/* ---------- HOME PAGE ONLY ---------- */
+
+.home-page {
+  text-align: center;
 }
 
-.card-icon {
-  height: 28px;
-  width: 28px;
-  object-fit: contain;
+.home-page .container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
 }
 
 /* ---------- HEADER ---------- */
 
-.site-header {
-  background: transparent;
+.home-page .site-header {
   position: relative;
   padding: 60px 20px 20px;
-  text-align: center;
 }
 
-header {
-  background: transparent;
+.home-page .logo {
+  width: 260px;
+  max-width: 80%;
+  position: relative;
+  z-index: 2;
+}
+
+.home-page .logo-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(59,130,246,0.35), transparent 70%);
+  filter: blur(40px);
+  animation: glowPulse 4s ease-in-out infinite;
+  z-index: 1;
+}
+
+@keyframes glowPulse {
+  0% { opacity: 0.4; transform: translate(-50%, -50%) scale(0.9); }
+  50% { opacity: 0.8; transform: translate(-50%, -50%) scale(1.1); }
+  100% { opacity: 0.4; transform: translate(-50%, -50%) scale(0.9); }
 }
 
 /* ---------- TYPOGRAPHY ---------- */
 
-h1 {
+.home-page h1 {
   margin-bottom: 0.5rem;
   font-size: 2.2rem;
-  color: #ffffff;
 }
 
-h2 {
-  margin-bottom: 0.5rem;
+.home-page h2 {
   font-size: 1.4rem;
-  color: #ffffff;
 }
 
-.tagline {
-  font-size: 1.1rem;
-  color: #cbd5e1;
-  text-align: center;
-  margin-top: 0.5rem;
+/* ---------- SECTIONS ---------- */
+
+.home-page .section {
+  margin-top: 60px;
 }
 
-/* ---------- LAYOUT ---------- */
+/* ---------- APP GRID ---------- */
 
-main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem 1.5rem;
+.home-page .app-grid {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  overflow-x: auto;
 }
 
-section {
-  margin-bottom: 2.5rem;
+.home-page .card {
+  min-width: 420px;
+  flex: 1;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+}
+
+.home-page .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(59,130,246,0.15);
+}
+
+/* ---------- CARD TITLE ---------- */
+
+.home-page .card-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.home-page .card-icon {
+  height: 28px;
+  width: 28px;
+}
+
+/* ---------- BUTTON ---------- */
+
+.home-page .button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
 }
 
 /* ---------- LINKS ---------- */
 
-a {
+.home-page a {
   color: #ffffff;
   text-decoration: none;
 }
 
-a:hover {
+.home-page a:hover {
   text-decoration: underline;
 }
 
 /* ---------- PRIVACY LINK ---------- */
 
-.privacy-link-wrapper {
-  margin-top: 12px;
+.home-page .privacy-link-wrapper {
+  margin-top: 20px;
 }
 
-.privacy-link,
-.privacy-link:visited,
-.privacy-link:active {
+.home-page .privacy-link {
   color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
   opacity: 0.9;
 }
 
-.privacy-link:hover {
+.home-page .privacy-link:hover {
   opacity: 1;
-  text-decoration: underline;
 }
 
 /* ---------- FOOTER ---------- */
 
-footer {
-  background: transparent;
-  color: #cbd5e1;
-  text-align: center;
-  padding: 40px 20px;
+.home-page footer {
   margin-top: 60px;
-  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 30px;
+  color: #94a3b8;
+  font-size: 14px;
 }
 
-footer a,
-footer a:visited {
-  color: #ffffff;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* ---------- PRIVACY PAGE ---------- */
-
-.policy h3 {
-  margin-top: 1.5rem;
-}
-
-/* ---------- BLOOM PAGE HEADER ---------- */
+/* ---------- BLOOM PAGE HEADER (unchanged) ---------- */
 
 .bloom-page .bloom-title {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
 }
 
 .bloom-page .title-center {
@@ -149,11 +182,9 @@ footer a:hover {
 
 .bloom-page .app-icon {
   height: 80px;
-  width: 80px;
 }
 
 .bloom-page .by-text {
   font-size: 10px;
   color: #cbd5e1;
-  white-space: nowrap;
 }
