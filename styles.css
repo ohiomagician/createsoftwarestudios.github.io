@@ -1,11 +1,14 @@
+/* ---------- GLOBAL ---------- */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  background-color: #ffffff;
   background: radial-gradient(circle at top, #050b1f, #020617);
-  color: #222;
+  color: #ffffff;
   line-height: 1.6;
 }
+
+/* ---------- HEADER ---------- */
 
 .site-header {
   background: transparent;
@@ -14,21 +17,31 @@ body {
   text-align: center;
 }
 
+/* REMOVE old light header styling */
 header {
-  padding: 3rem 1.5rem;
-  text-align: center;
-  background-color: #f6f7f8;
+  background: transparent;
 }
+
+/* ---------- TYPOGRAPHY ---------- */
 
 h1 {
   margin-bottom: 0.5rem;
   font-size: 2.2rem;
+  color: #ffffff;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  color: #ffffff;
 }
 
 .tagline {
   font-size: 1.1rem;
-  color: #555;
+  color: #cbd5e1;
 }
+
+/* ---------- LAYOUT ---------- */
 
 main {
   max-width: 800px;
@@ -40,20 +53,10 @@ section {
   margin-bottom: 2.5rem;
 }
 
-h2 {
-  margin-bottom: 0.5rem;
-  font-size: 1.4rem;
-}
-
-footer {
-  text-align: center;
-  padding: 1.5rem;
-  font-size: 0.9rem;
-  background-color: #f6f7f8;
-}
+/* ---------- LINKS ---------- */
 
 a {
-  color: #0066cc;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -61,14 +64,12 @@ a:hover {
   text-decoration: underline;
 }
 
-.policy h3 {
-  margin-top: 1.5rem;
-}
+/* ---------- APP TITLE ---------- */
 
 .app-title {
   display: flex;
-  align-items: center;        /* vertical alignment */
-  justify-content: center;    /* horizontal centering */
+  align-items: center;
+  justify-content: center;
   gap: 0.6em;
   text-align: center;
 }
@@ -78,20 +79,15 @@ a:hover {
 }
 
 .app-icon {
-  height: 3em;               /* 3x text height */
+  height: 3em;
   width: 3em;
   object-fit: contain;
 }
 
+/* ---------- PRIVACY LINK ---------- */
+
 .privacy-link-wrapper {
   margin-top: 12px;
-}
-
-.privacy-link {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  opacity: 0.9;
 }
 
 .privacy-link,
@@ -99,12 +95,16 @@ a:hover {
 .privacy-link:active {
   color: #ffffff !important;
   text-decoration: none;
+  font-weight: 500;
+  opacity: 0.9;
 }
 
 .privacy-link:hover {
-  color: #ffffff !important;
+  opacity: 1;
   text-decoration: underline;
 }
+
+/* ---------- FOOTER ---------- */
 
 footer {
   background: transparent;
@@ -123,4 +123,10 @@ footer a:visited {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* ---------- POLICY PAGE ---------- */
+
+.policy h3 {
+  margin-top: 1.5rem;
 }
