@@ -8,10 +8,13 @@
 <link rel="icon" type="image/png" href="/assets/favicon.png">
 </head>
 <body class="bloom-page">
+
 <header class="site-header">
   <div class="logo-glow"></div>
- </header>
+</header>
+
 <main>
+
 <div class="page-title bloom-title">
   <div class="title-center">
     <img
@@ -30,58 +33,138 @@
   Smart plant care made simple.
 </p>
 
-<section>
-  <h2>About</h2>
-  <p>
-    Bloom Health Pro helps you identify plants, diagnose issues, and
-    manage your garden using intelligent image recognition and
-    care recommendations.
+<section class="value-prop">
+  <h2>Finally, an app that helps your plants thrive</h2>
+  <p class="hero-text">
+    Other apps tell you what plant it is.<br>
+    <strong>Bloom Health Pro tells you how to make it flourish.</strong>
   </p>
 </section>
 
 <section>
-  <h2>Features</h2>
-  <ul>
-    <li>Plant identification using camera</li>
-    <li>Health analysis</li>
-    <img
-      src="assets/Diagnose.jpeg"
-      alt="Bloom Health Pro Diagnose Plant"
-      class="screenshot"
-      onclick="openImage(this)"
-    />
-    <li>Care recommendations</li>
-    <img
-      src="assets/CareGuide.jpeg"
-      alt="Bloom Health Pro Care Guide"
-      class="screenshot"
-      onclick="openImage(this)"
-    />
-    <li>Garden tracking</li>
-    <img
-      src="assets/MyGarden.jpeg"
-      alt="Bloom Health Pro Care Guide"
-      class="screenshot"
-      onclick="openImage(this)"
-    />
-    <li>Weather notifications</li>
-    <li>Watering notifications</li>
+  <h2>Why Bloom Health Pro?</h2>
+  <ul class="feature-list">
+    <li>Instant plant identification using your camera</li>
+    <li>AI-powered health analysis</li>
+    <li>Personalized care recommendations</li>
+    <li>Track your entire garden</li>
+    <li>Watering reminders</li>
+    <li>Weather-based plant alerts</li>
+    <li>Plant toxicity detection</li>
+    <li>Indoor & outdoor plant support</li>
   </ul>
+</section>
+
+<section>
+  <h2>See Bloom Health Pro in Action</h2>
+
+  <img
+    src="assets/Diagnose.jpeg"
+    alt="Bloom Health Pro Diagnose Plant"
+    class="screenshot"
+    onclick="openImage(this)"
+  />
+
+  <img
+    src="assets/CareGuide.jpeg"
+    alt="Bloom Health Pro Care Guide"
+    class="screenshot"
+    onclick="openImage(this)"
+  />
+
+  <img
+    src="assets/MyGarden.jpeg"
+    alt="Bloom Health Pro My Garden"
+    class="screenshot"
+    onclick="openImage(this)"
+  />
+</section>
+
+<section>
+  <h2>How We Compare</h2>
+
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th class="feature-col">Feature</th>
+        <th>Bloom Health Pro</th>
+        <th>Typical Plant Apps</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Plant Identification</td>
+        <td class="yes">✓</td>
+        <td class="yes">✓</td>
+      </tr>
+      <tr>
+        <td>Health Diagnosis</td>
+        <td class="yes">✓</td>
+        <td class="limited">Limited</td>
+      </tr>
+      <tr>
+        <td>Care Recommendations</td>
+        <td class="yes">✓</td>
+        <td class="yes">✓</td>
+      </tr>
+      <tr>
+        <td>Garden Tracking</td>
+        <td class="yes">✓</td>
+        <td class="limited">Limited</td>
+      </tr>
+      <tr>
+        <td>Watering Reminders</td>
+        <td class="yes">✓</td>
+        <td class="yes">✓</td>
+      </tr>
+      <tr>
+        <td>Weather Alerts</td>
+        <td class="yes">✓</td>
+        <td class="no">&times;</td>
+      </tr>
+      <tr>
+        <td>Toxic Plant Detection</td>
+        <td class="yes">✓</td>
+        <td class="limited">Limited</td>
+      </tr>
+      <tr>
+        <td>Simple Clean Interface</td>
+        <td class="yes">✓</td>
+        <td class="no">&times;</td>
+      </tr>
+      <tr>
+        <td>No Aggressive Paywalls</td>
+        <td class="yes">✓</td>
+        <td class="no">&times;</td>
+      </tr>
+    </tbody>
+  </table>
+
+</section>
+
+<section class="cta-section">
+  <h2>Make Your Plants Flourish</h2>
+  <p>
+    Stop guessing. Start growing healthier, happier plants today.
+  </p>
+
+  <div class="cta-buttons">
+    <a href="#" class="cta-button primary">Download Coming Soon</a>
+  </div>
 </section>
 
 </main>
 
 <footer>
   <p>© 2026 Creative Software Studios</p>
-  <p></p>
+
   <div class="footer-links">
     <a href="privacy.html" class="privacy-link">Privacy Policy</a>
-    <p></p>
+    <br>
     <a href="index.html" class="privacy-link">Back to Home</a>
-    <p></p>
-    <br></br>
   </div>
 </footer>
+
 <div id="imageModal" class="image-modal" onclick="closeImage()">
   <img class="image-modal-content" id="modalImage">
 </div>
@@ -96,5 +179,6 @@ function closeImage() {
   document.getElementById("imageModal").style.display = "none";
 }
 </script>
+
 </body>
 </html>
