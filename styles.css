@@ -455,19 +455,19 @@ body {
 
 /* Green checks */
 .vin-page .comparison-table .yes {
-  color: #22c55e;
+  color: #22c55e !important;
   font-weight: 700;
 }
 
 /* Red X */
 .vin-page .comparison-table .no {
-  color: #ef4444;
+  color: #ef4444 !important;
   font-weight: 700;
 }
 
 /* muted "Limited" */
 .vin-page .comparison-table .limited {
-  color: #facc15;
+  color: #facc15 !important;
 }
 
 .vin-page .comparison-table .feature-col {
