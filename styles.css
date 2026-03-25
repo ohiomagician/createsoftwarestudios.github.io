@@ -466,4 +466,6 @@ body {
   color: #facc15;
 }
 
-
+.vin-page .comparison-table .feature-col {
+  text-align: left;
+}
