@@ -254,6 +254,60 @@ body {
   border-radius: 12px;
 }
 
+/* ============================= */
+/* Bloom Health Pro enhancements */
+/* ============================= */
+
+.bloom-page .value-prop {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.bloom-page .hero-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #e2e8f0;
+  margin-top: 10px;
+}
+
+.bloom-page .feature-list {
+  display: inline-block;
+  text-align: left;
+  margin: 20px auto;
+  padding-left: 20px;
+}
+
+.bloom-page .feature-list li {
+  margin-bottom: 10px;
+}
+
+.bloom-page .cta-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.bloom-page .cta-buttons {
+  margin-top: 20px;
+}
+
+.bloom-page .cta-button {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.bloom-page .cta-button.primary {
+  background: #22c55e;
+  color: white;
+}
+
+.bloom-page .cta-button.primary:hover {
+  background: #16a34a;
+}
+
 /* ---------- PRIVACY PAGE ---------- */
 
 .privacy-page {
