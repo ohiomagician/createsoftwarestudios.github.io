@@ -411,3 +411,16 @@ body {
 .vin-page .footer-links a {
   color: #ffffff;
 }
+
+/* ---------- VIN PAGE LIST FIX ---------- */
+
+.vin-page ul {
+  list-style-position: inside;
+  padding-left: 0;
+  display: inline-block;
+  text-align: left;
+}
+
+.vin-page li {
+  text-align: left;
+}
