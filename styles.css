@@ -240,6 +240,22 @@ body {
   text-align: left;
 }
 
+/* ---------- BLOOM PAGE COMPARISON COLORS ---------- */
+
+.bloom-page .comparison-table .yes {
+  color: #22c55e;
+  font-weight: 700;
+}
+
+.bloom-page .comparison-table .no {
+  color: #ef4444;
+  font-weight: 700;
+}
+
+.bloom-page .comparison-table .limited {
+  color: #facc15;
+}
+
 /* ---------- BLOOM PAGE TEXT ALIGNMENT ---------- */
 
 .bloom-page {
