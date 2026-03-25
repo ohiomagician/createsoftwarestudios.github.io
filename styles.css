@@ -423,4 +423,49 @@ body {
 
 .vin-page li {
   text-align: center;
+
+/* ---------- VIN PAGE COMPARISON TABLE ---------- */
+
+.vin-page .comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 14px;
 }
+
+.vin-page .comparison-table th,
+.vin-page .comparison-table td {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  text-align: center;
+}
+
+/* Left-align first column including header */
+.vin-page .comparison-table th:first-child,
+.vin-page .comparison-table td:first-child {
+  text-align: left;
+}
+
+/* Highlight VIN Detective Pro column */
+.vin-page .comparison-table td:nth-child(2) {
+  font-weight: 600;
+}
+
+/* Green checks */
+.vin-page .comparison-table .yes {
+  color: #22c55e;
+  font-weight: 700;
+}
+
+/* Red X */
+.vin-page .comparison-table .no {
+  color: #ef4444;
+  font-weight: 700;
+}
+
+/* muted "Limited" */
+.vin-page .comparison-table .limited {
+  color: #facc15;
+}
+
+
