@@ -308,3 +308,106 @@ body {
 .privacy-page a:hover {
   text-decoration: underline;
 }
+
+/* =========================================================
+   VIN DETECTIVE PRO PAGE
+   ========================================================= */
+
+.vin-page {
+  text-align: center;
+}
+
+.vin-page main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header layout */
+
+.vin-page .vin-title {
+  max-width: 900px;
+  margin: 0 auto 10px auto;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.vin-page .title-center {
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+}
+
+.vin-page .title-right {
+  grid-column: 3;
+  justify-self: center;
+}
+
+.vin-page .app-icon {
+  height: 80px;
+}
+
+.vin-page .by-text {
+  font-size: 10px;
+  color: #cbd5e1;
+}
+
+/* Tagline */
+
+.vin-page .tagline {
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* Coming soon */
+
+.vin-page .coming-soon {
+  margin: 10px auto 20px;
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: linear-gradient(135deg,#2563eb,#1d4ed8);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Comparison table */
+
+.vin-page .comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.vin-page .comparison-table th,
+.vin-page .comparison-table td {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  text-align: center;
+}
+
+.vin-page .comparison-table th {
+  font-weight: 600;
+}
+
+.vin-page .comparison-table td:first-child {
+  text-align: left;
+}
+
+/* Footer links */
+
+.vin-page .footer-links {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vin-page .footer-links a {
+  color: #ffffff;
+}
