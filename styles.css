@@ -440,15 +440,13 @@ body {
   text-align: center;
 }
 
-/* Left-align first column including header */
-.vin-page .comparison-table th:first-child,
-.vin-page .comparison-table td:first-child {
-  text-align: left;
+/* Force first column alignment */
+.vin-page .comparison-table th:first-child {
+  text-align: left !important;
 }
 
-/* Highlight VIN Detective Pro column */
-.vin-page .comparison-table td:nth-child(2) {
-  font-weight: 600;
+.vin-page .comparison-table td:first-child {
+  text-align: left;
 }
 
 /* Green checks */
