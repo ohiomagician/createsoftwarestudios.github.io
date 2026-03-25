@@ -427,6 +427,7 @@ body {
 
 .vin-page li {
   text-align: center;
+}
 
 /* ---------- VIN PAGE COMPARISON TABLE ---------- */
 
@@ -445,31 +446,24 @@ body {
 }
 
 /* Force first column alignment */
-.vin-page .comparison-table th:first-child {
-  text-align: left !important;
-}
-
+.vin-page .comparison-table th:first-child,
 .vin-page .comparison-table td:first-child {
   text-align: left;
 }
 
 /* Green checks */
 .vin-page .comparison-table .yes {
-  color: #22c55e !important;
+  color: #22c55e;
   font-weight: 700;
 }
 
 /* Red X */
 .vin-page .comparison-table .no {
-  color: #ef4444 !important;
+  color: #ef4444;
   font-weight: 700;
 }
 
-/* muted "Limited" */
+/* Yellow "Limited" */
 .vin-page .comparison-table .limited {
-  color: #facc15 !important;
-}
-
-.vin-page .comparison-table .feature-col {
-  text-align: left;
+  color: #facc15;
 }
