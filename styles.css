@@ -213,6 +213,33 @@ body {
   white-space: nowrap;
 }
 
+/* Center comparison table on Bloom page */
+.bloom-page .comparison-table {
+  margin: 40px auto;
+  width: 100%;
+  max-width: 900px;
+  border-collapse: collapse;
+}
+
+/* Center the table container */
+.bloom-page .comparison-table-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* Align text properly */
+.bloom-page .comparison-table th,
+.bloom-page .comparison-table td {
+  text-align: center;
+  padding: 14px 16px;
+}
+
+/* Left align feature column like VIN page */
+.bloom-page .comparison-table .feature-col,
+.bloom-page .comparison-table td:first-child {
+  text-align: left;
+}
+
 /* ---------- BLOOM PAGE TEXT ALIGNMENT ---------- */
 
 .bloom-page {
