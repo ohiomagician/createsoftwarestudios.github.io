@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bloom Health Pro - Creative Software Studios</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+</head>
+<body class="bloom-page">
+<header class="site-header">
+  <div class="logo-glow"></div>
+ </header>
+<main>
+<div class="page-title bloom-title">
+  <div class="title-center">
+    <img
+      src="assets/BloomHealthPro.png"
+      alt="Bloom Health Pro App Icon"
+      class="app-icon"
+    />
+    <h1>Bloom Health Pro</h1>
+  </div>
+  <div class="title-right">
+    <span class="by-text">by Creative Software Studios</span>
+  </div>
+</div>
+
+<p class="tagline">
+  Smart plant care made simple.
+</p>
+
+<section>
+  <h2>About</h2>
+  <p>
+    Bloom Health Pro helps you identify plants, diagnose issues, and
+    manage your garden using intelligent image recognition and
+    care recommendations.
+  </p>
+</section>
+
+<section>
+  <h2>Features</h2>
+  <ul>
+    <li>Plant identification using camera</li>
+    <li>Health analysis</li>
+    <img
+      src="assets/Diagnose.jpeg"
+      alt="Bloom Health Pro Diagnose Plant"
+      class="screenshot"
+      onclick="openImage(this)"
+    />
+    <li>Care recommendations</li>
+    <img
+      src="assets/CareGuide.jpeg"
+      alt="Bloom Health Pro Care Guide"
+      class="screenshot"
+      onclick="openImage(this)"
+    />
+    <li>Garden tracking</li>
+    <img
+      src="assets/MyGarden.jpeg"
+      alt="Bloom Health Pro Care Guide"
+      class="screenshot"
+      onclick="openImage(this)"
+    />
+    <li>Weather notifications</li>
+    <li>Watering notifications</li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 Creative Software Studios</p>
+  <p></p>
+  <div class="footer-links">
+    <a href="privacy.html" class="privacy-link">Privacy Policy</a>
+    <p></p>
+    <a href="index.html" class="privacy-link">Back to Home</a>
+    <p></p>
+    <br></br>
+  </div>
+</footer>
+<div id="imageModal" class="image-modal" onclick="closeImage()">
+  <img class="image-modal-content" id="modalImage">
+</div>
+
+<script>
+function openImage(img) {
+  document.getElementById("imageModal").style.display = "flex";
+  document.getElementById("modalImage").src = img.src;
+}
+
+function closeImage() {
+  document.getElementById("imageModal").style.display = "none";
+}
+</script>
+</body>
+</html>
